@@ -11,8 +11,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
 
 
-
-
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -68,7 +66,7 @@ export default function Navbar({ pokemonFilter, hideSearch }) {
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
-              <StyledInputBase placeholder="Pesquisando…" alignItems="center" inputProps={{ 'aria-label': 'search' }} />
+              <StyledInputBase placeholder="Pesquisar" alignItems="center" inputProps={{ 'aria-label': 'search' }} />
             </Search>
             )}
           </Box>
