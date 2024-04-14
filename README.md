@@ -1,3 +1,6 @@
+# Pok-Dex-Api
+"Pok-Dex" é um projeto desenvolvido como parte de um trabalho da aula de desenvolvimento web 3. Ele utiliza a API de Pokémon para fornecer informações detalhadas sobre os Pokémon disponíveis. O site foi implementado para pesquisar e descobrir informações de um pokemon como sua altura, peso e tipo na pokedex.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
