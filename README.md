@@ -12,11 +12,11 @@ Link do site:
 ## Home
 ![HOME](./public/assets/prints/HOME.png)
 ## Botão para o inicio
-
+![Binicio](./public/assets/prints/Binicio.png)
 ## Pesquisa funcional
-
+![Funcional](./public/assets/prints/Funcional.png)
 ## Card com informações
-
+![card](./public/assets/prints/card.png)
 
 # Tecnologias utilizadas
 ## Front end
