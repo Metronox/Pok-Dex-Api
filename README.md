@@ -10,7 +10,7 @@ Link do site:
 
 # Layout 
 ## Home
-
+![HOME](./public/assets/prints/HOME.png)
 ## Botão para o inicio
 
 ## Pesquisa funcional
