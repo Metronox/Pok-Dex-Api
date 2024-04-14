@@ -1,13 +1,15 @@
-import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
+import * as React from "react";
+import { styled, alpha } from "@mui/material/styles";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import InputBase from "@mui/material/InputBase";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -53,19 +55,22 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function Navbar({ pokemonFilter }) {
+export default function Navbar({ pokemonFilter, hideSearch }) {
+  const navigate = useNavigate()
   return (
     <Box sx={{ flexGrow: 1, marginBottom:"1em" }}>
       <AppBar position="static" sx={{ backgroundColor: "black" }}>
         <Toolbar>
           <Box display="flex" justifyContent="space-between" alignItems="center" width="100%">
-            <img src="/assets/poklogo.png" alt="Logo" height="50em" />
+            <img src="/assets/poklogo.png" alt="Logo" height="50em" sx={{ cursor: "pointer"}} onClick={() => navigate("/")}/>
+            {!hideSearch && (
             <Search onChange={(e)=>pokemonFilter(e.target.value)}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase placeholder="Pesquisando…" alignItems="center" inputProps={{ 'aria-label': 'search' }} />
             </Search>
+            )}
           </Box>
         </Toolbar>
       </AppBar>
