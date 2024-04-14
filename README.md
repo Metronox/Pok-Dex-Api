@@ -1,7 +1,7 @@
 # Pok-Dex
 ![NPM](https://img.shields.io/npm/l/react) <br/>
 Trabalho de Desenvolvimento Web III <br />
-Link do site:
+Link do site: https://pok-dex-api.vercel.app/
 
 
 # Descrição
@@ -30,10 +30,15 @@ Link do site:
 -API: PokéAPI
 
 ## Hospedagem
--Netlify
-
+-Vercel
 
 # Como executar o projeto
+Pré-requisitos: ter instalado npm ou yarn, axios e o mui
+- Clonar repositório
+git clone https://github.com/Metronox/Pok-Dex-Api
+
+- Executar
+npm start
 
 
 # Autor
